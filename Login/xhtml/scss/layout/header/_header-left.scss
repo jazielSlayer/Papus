@@ -1,0 +1,76 @@
+.header-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+	
+	.dashboard_bar {
+		font-size: 30px;
+		font-weight: 500;
+		color:$black;
+		@include respond('tab-land') {
+			font-size: 24px;
+		}
+		@include respond('phone-land') {
+			font-size: 20px;
+		}
+		@include respond('phone') {
+			display:none;
+		}
+	}
+	.search-area{
+		width: 19.75rem;
+		border-radius: 50%;
+		.form-control{
+			height: 2.5rem;
+			border-right:0;
+			border-color: #EEEEEE;
+			border-top-left-radius: 0.5rem;
+			border-bottom-left-radius: 0.5rem;
+			background:#EEEEEE;
+			&:hover,
+			&:focus{
+				border-color:#EEEEEE;	
+			}
+		}	
+		.input-group-text{
+			height        : 2.5rem;
+			border-radius : 0.5rem;
+			background    : #EEEEEE;
+			padding       :  0 1.25rem;
+			border-color: #EEEEEE;
+			i{
+				font-size : 1rem;
+				color: #717579;
+			}
+		}
+		@include custommq ($max:100rem){
+			width: 15.625rem;
+		}
+		@include respond('phone-land'){
+			display:none;
+		}
+
+
+	}
+	
+   
+    // .btn {
+    //     border-top-left-radius: 0;
+    //     border-bottom-left-radius: 0;
+    //     height: 45px;
+    //     @at-root [direction="rtl"] & {
+    //         border-top-right-radius: 0;
+    //         border-bottom-right-radius: 0; 
+    //         border-top-left-radius: .25rem;
+    //         border-bottom-left-radius: .25rem;
+    //     }
+    // }
+   
+}
+
+
+[data-sidebar-style="compact"] {
+    .header-left {
+        margin-left: 0;
+    }
+}

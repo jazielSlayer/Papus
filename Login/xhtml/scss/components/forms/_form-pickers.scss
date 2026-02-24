@@ -1,0 +1,303 @@
+
+
+.asColorPicker-dropdown {
+    max-width: 26rem;
+}
+
+.asColorPicker-trigger {
+    border  : 0 none;
+    height  : 100%;
+    position: absolute;
+    right: 0;
+    top     : 0;
+    width   : 2.1875rem;
+	border-radius: 0  $radius $radius 0;
+	
+	span{
+		border-radius: 0  $radius $radius 0;
+	}
+}
+[direction="rtl"] .asColorPicker-trigger{
+	left: 0;
+	right: auto;
+}
+.asColorPicker-clear {
+    display        : none;
+    position       : absolute;
+    right          : 1rem;
+    text-decoration: none;
+    top            : .5rem;
+}
+
+
+
+.daterangepicker {
+    td.active {
+        background-color: var(--primary);
+
+        &:hover {
+            background-color: var(--primary);
+        }
+    }
+
+    button.applyBtn {
+        background-color: var(--primary);
+        border-color: var(--primary);
+    }
+}
+
+.datepicker {
+
+    &.datepicker-dropdown {
+        background: $l-bg;
+        border-radius: 0.0625rem;
+        border: 0.0625rem solid $gallery;
+
+        td.day, th.next, th.prev {
+            height: 1.875rem;
+            width: 1.875rem !important;
+            padding: 0;
+            text-align: center;
+            font-weight: 300;
+            border-radius: 3.125rem;
+
+            &:hover {
+                @extend %gradient-9;
+                box-shadow: 0rem 0rem 1.875rem 0.3125rem rgba(243,30,122,0.3);
+                color: $white;
+            }
+        }
+
+        th.datepicker-switch, th.next, th.prev {
+            font-weight: 300;
+            color: $heading;
+        }
+
+        th.dow {
+            font-weight: 300;
+        }
+    }
+    table {
+
+        
+
+        tr td.selected, tr td.active.active {
+            @extend %gradient-9;
+           box-shadow: 0rem 0rem 1.875rem 0.3125rem rgba(243,30,122,0.3);
+            border: 0;
+        }
+
+        tr {
+            td.today {
+                @extend %gradient-9;
+                box-shadow: 0rem 0rem 1.875rem 0.3125rem rgba(243,30,122,0.3);
+                color     : #ffffff;
+
+                &:hover {
+                    @extend %gradient-9;
+                    box-shadow: 0rem 0rem 1.875rem 0.3125rem rgba(243,30,122,0.3);
+                    color     : #ffffff;
+                }
+            }
+
+            td.today.disabled {
+                @extend %gradient-9;
+                box-shadow: 0rem 0rem 1.875rem 0.3125rem rgba(243,30,122,0.3);
+                color     : #ffffff;
+
+                &:hover {
+                    @extend %gradient-9;
+                    box-shadow: 0rem 0rem 1.875rem 0.3125rem rgba(243,30,122,0.3);
+                    color     : #ffffff;
+                }
+            }
+        }
+    }
+}
+
+
+.picker {
+    &__select--month, &__select--year {
+        height: 2.5em;
+    }
+
+    &__input {
+        background-color: transparent !important;
+
+        @at-root [data-theme-version="dark"] & {
+            background-color: transparent !important;
+            border: 0.0625rem solid $d-border;
+        }
+    }
+}
+
+
+
+.daterangepicker td.available:hover, .daterangepicker th.available:hover{
+		color:var(--primary);
+		background-color:#f9f9f9;
+}
+.daterangepicker .drp-calendar.left{
+		padding:1rem 1rem;
+}
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td{
+	width:33px;
+	height:33px;
+	border-radius:$radius!important;
+	color:#B5B5C3;
+}
+.daterangepicker td.in-range{
+	background-color:transparent;
+	color:#5E6278!important;
+}
+.daterangepicker .calendar-table th{
+	font-size:14px;
+	font-weight:500;
+	color:#3F4254;
+}
+button.cancelBtn.btn.btn-sm.btn-inverse{
+	background-color:#f9f9f9;
+}
+.daterangepicker{
+	box-shadow:0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+	border:0;
+}
+.daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span{
+	border-width:0 1.9px 1.9px 0;
+	border-color:$light;
+}
+.bootstrap-select.form-control-lg .dropdown-toggle{
+	min-height: 3.75rem;
+    padding: 0.5rem 1.563rem;
+}
+.bootstrap-select.form-control-sm .dropdown-toggle{
+	min-height: 2.5rem;
+    padding: 0.25rem 1.563rem;
+}
+.input-group.input-group-lg{
+	min-height:3.75rem;
+	.form-control{
+		height:3.75rem;
+	}
+}
+.input-group.input-group-sm{
+	min-height:2.75rem;
+	.form-control{
+		height:2.75rem;
+	}
+}
+
+.daterangepicker {
+    td.active {
+        background-color: var(--primary);
+		color:$white!important;
+
+        &:hover,
+		&:active		{
+            background-color: var(--primary);
+			color:$white;
+        }
+    }
+
+    button.applyBtn {
+        background-color: var(--primary);
+        border-color: var(--primary);
+    }
+}
+
+.datepicker {
+	padding:20px;
+	
+
+    &.datepicker-dropdown {
+        background: $white;
+        border-radius: 0.0625rem;
+        border: 0.0625rem solid $gallery;
+
+        td.day, th.next, th.prev {
+            height: 1.875rem;
+            width: 1.875rem !important;
+            padding: 6px 8px;
+            text-align: center;
+            font-weight: 500;
+            border-radius: $radius;
+
+            &:hover {
+                box-shadow: unset;
+                color: $black;
+                background-color: var(--rgba-primary-1)!important ;
+				background-image:none!important
+               
+            }
+        }
+
+        th.datepicker-switch, th.next, th.prev {
+            font-weight: 600;
+            color: $heading;
+        }
+
+        th.dow {
+            font-weight: 600;
+        }
+    }
+    table {
+        tr td.selected, tr td.active.active {
+            background-color: var(--primary)!important;
+            border-radius: $radius;
+            // border: 0;
+            color: $white; 
+            background-image: none!important;
+            position: relative;
+			box-shadow:none;
+        }
+
+        tr {
+            
+            td.today {
+                border-radius: $radius;
+                color : $black;
+				background-color:var(--primary)!important;
+				background-image:none!important;
+				box-shadow:none;
+				color:$white;
+
+                &:hover {
+                    background-color: var(--primary);
+                    //box-shadow: 0rem 0rem 1.875rem 0.3125rem rgba(243,30,122,0.3);
+                    color : #ffffff;
+                }
+            }
+
+            td.today.disabled {
+               
+                box-shadow: 0rem 0rem 1.875rem 0.3125rem rgba(243,30,122,0.3);
+                color     : #ffffff;
+
+                &:hover {
+                  
+                    box-shadow: 0rem 0rem 1.875rem 0.3125rem rgba(243,30,122,0.3);
+                    color     : #ffffff;
+                }
+            }
+        }
+         thead tr:first-child th:hover {
+            background: var(--rgba-primary-1) ;
+        }
+        thead tr th:hover {
+            background: var(--rgba-primary-1) ;
+        }
+        td.day:hover{
+            background: var(--rgba-primary-1) ;
+            border-radius: $radius;
+        }
+    }
+}
+.input-group{
+	&.custom-select{
+		.dropdown-menu{
+			&.show{
+				z-index:4;
+			}
+		}
+	}
+}

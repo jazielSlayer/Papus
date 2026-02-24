@@ -1,0 +1,108 @@
+
+
+.error-page{
+	@include respond ('tab-port'){
+		text-align:center;
+		
+	}
+	.error-text {
+		font-size: 150px;
+		line-height: 1;
+		font-weight: 700;
+		margin-bottom: 0;
+
+		@include respond('tab-port'){
+			font-size:130px;
+		}
+		
+		@include respond('phone') {
+			font-size: 80px;
+		}
+	}
+	h4{
+		font-size: 44px;
+		margin-bottom: 0;
+		line-height: 1.2;
+		
+		@include respond('tab-port'){
+			font-size:37px;
+		}
+		@include respond('phone-land'){
+			font-size:27px;
+		}
+		
+		@include respond('phone') {
+			font-size: 20px;
+		}
+	}
+	p{
+		font-size: 18px;
+		color: #c2c2c2;
+		margin-bottom: 30px;
+		@include respond('phone-land'){
+			font-size:1rem;
+		}
+
+		
+		@include respond('phone') {
+			font-size: 14px;
+		}
+	}
+	
+}
+
+.move-1 {
+  -webkit-animation: move1 5s infinite;
+  animation: move1 5s infinite; }
+
+.move-2 {
+  -webkit-animation: move2 5s infinite;
+  animation: move2 5s infinite; }
+
+.move-3 {
+  -webkit-animation: move3 5s infinite;
+  animation: move3 5s infinite; }
+
+@-webkit-keyframes move1 {
+  0% {
+    -webkit-transform: rotate(-1deg) translate(-2px, -2px);
+    transform: rotate(-1deg) translate(-2px, -2px); }
+  50% {
+    -webkit-transform: rotate(1deg) translate(2px, 2px);
+    transform: rotate(1deg) translate(2px, 2px); }
+  100% {
+    -webkit-transform: rotate(-1deg) translate(-2px, -2px);
+    transform: rotate(-1deg) translate(-2px, -2px); } }
+@keyframes move1 {
+  0% {
+    -webkit-transform: rotate(-1deg) translate(-2px, -2px);
+    transform: rotate(-1deg) translate(-2px, -2px); }
+  50% {
+    -webkit-transform: rotate(1deg) translate(2px, 2px);
+    transform: rotate(1deg) translate(2px, 2px); }
+  100% {
+    -webkit-transform: rotate(-1deg) translate(-2px, -2px);
+    transform: rotate(-1deg) translate(-2px, -2px); } }
+@-webkit-keyframes move2 {
+  0% {
+    -webkit-transform: rotate(1deg) translate(2px, 2px);
+    transform: rotate(1deg) translate(2px, 2px); }
+  50% {
+    -webkit-transform: rotate(-1deg) translate(-2px, -2px);
+    transform: rotate(-1deg) translate(-2px, -2px); }
+  100% {
+    -webkit-transform: rotate(1deg) translate(2px, 2px);
+    transform: rotate(1deg) translate(2px, 2px); } }
+@-webkit-keyframes move3 {
+  0% {
+    transform: translate(0, 0); }
+  20% {
+    transform: translate(5px, 0); }
+  40% {
+    transform: translate(5px, 5px); }
+  65% {
+    transform: translate(0, 5px); }
+  65% {
+    transform: translate(5px, 0); }
+  100% {
+    transform: translate(0, 0); } }

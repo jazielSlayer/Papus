@@ -1,0 +1,27 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "Login ",
+  "keywords": [
+    "papus"
+  ],
+  "homepage": "https://github.com/jazielSlayer/Papus#readme",
+  "bugs": {
+    "url": "https://github.com/jazielSlayer/Papus/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jazielSlayer/Papus.git"
+  },
+  "license": "ISC",
+  "author": "Papus",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev",
+    "sass": "sass --watch scss/main.scss css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
+}

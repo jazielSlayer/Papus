@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Calculadora Básica</title>
+
+    <script>
+        function sumar() {
+            let num1 = parseFloat(document.calculadora.valor1.value);
+            let num2 = parseFloat(document.calculadora.valor2.value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.calculadora.resultado.value = "Ingrese números válidos";
+                return;
+            }
+
+            document.calculadora.resultado.value = num1 + num2;
+        }
+
+        function restar() {
+            let num1 = parseFloat(document.calculadora.valor1.value);
+            let num2 = parseFloat(document.calculadora.valor2.value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.calculadora.resultado.value = "Ingrese números válidos";
+                return;
+            }
+
+            document.calculadora.resultado.value = num1 - num2;
+        }
+
+        function multiplicar() {
+            let num1 = parseFloat(document.calculadora.valor1.value);
+            let num2 = parseFloat(document.calculadora.valor2.value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.calculadora.resultado.value = "Ingrese números válidos";
+                return;
+            }
+
+            document.calculadora.resultado.value = num1 * num2;
+        }
+
+        function dividir() {
+            let num1 = parseFloat(document.calculadora.valor1.value);
+            let num2 = parseFloat(document.calculadora.valor2.value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.calculadora.resultado.value = "Ingrese números válidos";
+                return;
+            }
+
+            if (num2 === 0) {
+                document.calculadora.resultado.value = "No se puede dividir entre 0";
+                return;
+            }
+
+            document.calculadora.resultado.value = num1 / num2;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Calculadora Básica</h2>
+
+    <form name="calculadora">
+        Primer número:
+        <input type="text" name="valor1"><br><br>
+
+        Segundo número:
+        <input type="text" name="valor2"><br><br>
+
+        <input type="button" value="Sumar" onclick="sumar()">
+        <input type="button" value="Restar" onclick="restar()">
+        <input type="button" value="Multiplicar" onclick="multiplicar()">
+        <input type="button" value="Dividir" onclick="dividir()"><br><br>
+
+        Resultado:
+        <input type="text" name="resultado" readonly>
+    </form>
+</body>
+</html>
